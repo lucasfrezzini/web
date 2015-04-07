@@ -1,0 +1,66 @@
+body {
+	background : #CCC;
+	font-family: 'Lato', sans-serif;
+}
+
+#container {
+	width: 40%;
+	margin: 5% auto;
+	text-align: center;
+}
+#container > img {
+	margin-bottom: 30px;
+}
+
+#container > p {
+	  font-size: 14px;
+  font-weight: 100;
+  font-stretch: normal;
+  font-style: italic;
+}
+
+#cajalogin {
+	background: rgb(236, 236, 236);
+    padding: 20px 30px 40px 30px;
+    border-radius: 5px;
+    text-align: center;
+    border: 1px solid rgb(184, 183, 183);
+}
+
+h1 {
+	color: black;
+}
+#cajalogin input {
+	height: 30px;
+	margin: 20px 0;
+	width: 90%;
+	border-radius: 5px;
+	display: block;
+	padding-left: 10%;
+	border: none;
+	border: 1px solid rgb(184, 183, 183);
+}
+#cajalogin input#usuario {
+	background-image: url("../img/iconlogin.png");
+	background-repeat: no-repeat;
+	background-position: 6px 5px;
+}
+
+#cajalogin input#password {
+	background-image: url("../img/iconpass.png");
+	background-repeat: no-repeat;
+	background-position: 6px 5px;
+}
+
+#cajalogin input#btnEnviar {
+	width: 30%;
+	margin: 0 auto;
+	background-color: #515151;
+	height: 35px;
+	color: white;
+	padding-left: 0;
+	border: none;
+	box-shadow: 1px 1px 5px black;
+	cursor: pointer;
+}
+

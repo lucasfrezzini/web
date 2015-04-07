@@ -1,0 +1,77 @@
+<Doctype html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Yo quiero ESPECTÁCULOS - Alejo Acosta | Lucas Frezzini</title>
+
+		<link rel="stylesheet" href="css/main.css">
+		<link href='http://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic' rel='stylesheet' type='text/css'>
+	</head>
+	<body>
+		<header>
+			<div class="container">
+				<div class="logo">
+					<img src="img/logo.png"alt="">
+				</div>
+				<div class="menu">
+					<a href="#publicaciones">Evento</a>
+					<a href="#mapa">Mapa</a>
+					<a href="#formulario">Formulario</a>
+					<a href="login.html" id="btnSesion">Iniciar Sesión</a>
+				</div>
+			</div>
+		</header>
+		<section id="empresa">
+			<div class="container">
+				<h1>Quienes Somos</h1>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem molestiae, minus sed non iusto sapiente ipsam maxime architecto quos numquam temporibus eum nulla et voluptas deleniti reprehenderit obcaecati iure doloribus?</p>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem adipisci veniam, hic, possimus officia voluptas. Reiciendis, dolorum nobis, dicta voluptate nam voluptas, possimus libero tempore beatae est suscipit dignissimos itaque.</p>
+			</div>
+		</section>
+		<section id="features">
+			<div class="container">
+				<h3>Más cercanas</h3>
+				<div id="recientes">
+					<div class="reciente">
+						<h4 class="title-evento">Metallica</h4>
+					</div>
+					<div class="reciente">
+						<h4 class="title-evento">Radiohead</h4>
+					</div>
+					<div class="reciente">
+						<h4 class="title-evento">Pocho La Pantera</h4>
+					</div>
+					<div class="reciente">
+						<h4 class="title-evento">AC/DC</h4>
+					</div>
+				</div>
+			</div>
+		</section>
+		<footer>
+			<div class="container">
+				<div class="texto ">
+					<p>Copyright</p>
+				</div>
+				<div class="texto last">
+					<p>Alejo Acosta - Lucas Frezzini</p>
+				</div>
+			</div>
+		</footer>
+	</body>
+
+	<!-- SCRIPTS -->
+
+	<script src="https://maps.googleapis.com/maps/api/js"></script>
+	<script>
+      function initialize() {
+        var mapCanvas = document.getElementById('map-canvas');
+        var mapOptions = {
+          center: new google.maps.LatLng(-34.903808,-57.938117),
+          zoom: 16,
+          mapTypeId: google.maps.MapTypeId.ROADMAP
+        }
+        var map = new google.maps.Map(mapCanvas, mapOptions)
+      }
+      google.maps.event.addDomListener(window, 'load', initialize);
+    </script>
+</html>

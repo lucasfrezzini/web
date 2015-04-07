@@ -1,0 +1,106 @@
+<Doctype html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Yo quiero ESPECTÁCULOS - Alejo Acosta | Lucas Frezzini</title>
+
+		<link rel="stylesheet" href="css/main.css">
+		<link href='http://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic' rel='stylesheet' type='text/css'>
+	</head>
+	<body>
+		<header>
+			<div class="container">
+				<div class="logo">
+					<img src="img/logo.png"alt="">
+				</div>
+				<div class="menu">
+					<a href="quienes-somos.html">Empresa</a>
+					<a href="index.html">Evento</a>
+					<a href="llegar.html">Contacto</a>
+					<a href="#formulario">Formulario</a>
+					<a href="login.html" id="btnSesion">Iniciar Sesión</a>
+				</div>
+			</div>
+		</header>
+		<section id="publicaciones">
+			<div class="container">
+				<h3>Más cercanas</h3>
+				<div id="recientes">
+					<div class="reciente">
+						<h4 class="title-evento">Metallica</h4>
+					</div>
+					<div class="reciente">
+						<h4 class="title-evento">Radiohead</h4>
+					</div>
+					<div class="reciente">
+						<h4 class="title-evento">Pocho La Pantera</h4>
+					</div>
+					<div class="reciente">
+						<h4 class="title-evento">AC/DC</h4>
+					</div>
+				</div>
+				<div id="allEvent">
+					<h3>Eventos</h3>
+					<div class="filaEventos">
+						<div class="evento">
+							
+						</div>
+						<div class="evento">
+							
+						</div>
+					</div>
+					<div class="filaEventos">
+						<div class="evento">
+							
+						</div>
+						<div class="evento">
+							
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section id="mapa">
+			<div id="map-canvas">
+				
+			</div>
+		</section>
+		<section id="formulario">
+			<div class="container">
+				<form action="">
+					<h3>Formulario</h3>
+					<input type="text" placeholder="Ingrese su Nombre">
+					<input type="email" placeholder="Ingrese su Email">
+					<textarea name="" id="" placeholder="Ingrese su Mensaje" ></textarea>
+					<input type="submit">
+				</form>
+			</div>
+		</section>
+		<footer>
+			<div class="container">
+				<div class="texto ">
+					<p>Copyright</p>
+				</div>
+				<div class="texto last">
+					<p>Alejo Acosta - Lucas Frezzini</p>
+				</div>
+			</div>
+		</footer>
+	</body>
+
+	<!-- SCRIPTS -->
+
+	<script src="https://maps.googleapis.com/maps/api/js"></script>
+	<script>
+      function initialize() {
+        var mapCanvas = document.getElementById('map-canvas');
+        var mapOptions = {
+          center: new google.maps.LatLng(-34.903808,-57.938117),
+          zoom: 16,
+          mapTypeId: google.maps.MapTypeId.ROADMAP
+        }
+        var map = new google.maps.Map(mapCanvas, mapOptions)
+      }
+      google.maps.event.addDomListener(window, 'load', initialize);
+    </script>
+</html>
